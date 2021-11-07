@@ -19,11 +19,12 @@ import {
 import CreateActivos from "./components/create-activos.component";
 import EditActivos from "./components/edit-activos.component";
 import ActivosList from "./components/activos-list.component";
+import Home  from "./components/Home.component";
 
 function App() {
   return (
     <div className="App">
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" >
         <Container>
           <Navbar.Brand>
             <Link to={"/"} className="nav-link">
@@ -54,7 +55,7 @@ function App() {
           <Col md={12}>
             <div className="wrapper">
               <Switch>
-                <Route exact path="/" > Home </Route>
+                <Route exact path="/" component={Home} /> 
                 <Route path="/create-activos" component={CreateActivos} />
                 <Route path="/edit-activos/:id" component={EditActivos} />
                 <Route path="/activos-list" component={ActivosList} />
