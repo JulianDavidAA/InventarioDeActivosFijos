@@ -4,7 +4,7 @@ import Table from 'react-bootstrap/Table';
 export default class List extends Component {
     render() {
         return (
-            <div className="table-wrapper">
+            <div className="table-wrapper w-100">
                 <Table striped bordered hover>
                     <thead>
                         <tr>
